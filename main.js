@@ -103,5 +103,100 @@ btn.forEach(b => {
 const retorna = document.querySelector('#tempo i');
 
 retorna.addEventListener('click', () => {
-    window.location = "cadastro.html"
+    window.location = "index.html"
+})
+
+document.addEventListener('keypress', (ev) => {
+    let query = ev.key
+
+    let a;
+
+    switch (query) {
+    // azul
+        case 'q':
+            // -- vantagem
+            a  = Number(btn[0].textContent)
+            a--
+            btn[0].textContent = a
+            break;
+        case 'w':
+            // ++ vantagem
+            a  = Number(btn[0].textContent)
+            a++
+            btn[0].textContent = a
+            break;
+
+        case 'a':
+            // ++ desvantagem
+            a  = Number(btn[1].textContent)
+            a--
+            btn[1].textContent = a
+            break;
+
+        case 's':
+            // -- desvantagem
+            a  = Number(btn[1].textContent)
+            a++
+            btn[1].textContent = a
+            break;
+        case 'z':
+            // -- pontos
+            a  = Number(btn[2].textContent)
+            a--
+            btn[2].textContent = a
+            break;
+
+        case 'x':
+            // ++ pontos
+            a  = Number(btn[2].textContent)
+            a++
+            btn[2].textContent = a
+            break;
+
+    // vermelho
+
+        case 'o':
+            // -- vantagem
+            a  = Number(btn[3].textContent)
+            a--
+            btn[3].textContent = a
+            break;
+        case 'p':
+            // ++ vantagem
+            a  = Number(btn[3].textContent)
+            a++
+            btn[3].textContent = a
+            break;
+
+        case 'k':
+            // ++ desvantagem
+            a  = Number(btn[4].textContent)
+            a--
+            btn[4].textContent = a
+            break;
+
+        case 'l':
+            // -- desvantagem
+            a  = Number(btn[4].textContent)
+            a++
+            btn[4].textContent = a
+            break;
+        case 'n':
+            // -- pontos
+            a  = Number(btn[5].textContent)
+            a--
+            btn[5].textContent = a
+            break;
+
+        case 'm':
+            // ++ pontos
+            a  = Number(btn[5].textContent)
+            a++
+            btn[5].textContent = a
+            break;
+
+        default:
+            console.log('tecla nao encontrada')
+            break;
+    }
 })

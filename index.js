@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
     tempo: localStorage.getItem('tempo')
   })
 
-  window.location.href = 'index.html'
+  window.location.href = 'main.html'
 
 })
 
