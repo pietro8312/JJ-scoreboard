@@ -108,7 +108,6 @@ retorna.addEventListener('click', () => {
 
 document.addEventListener('keypress', (ev) => {
     let query = ev.key
-
     let a;
 
     switch (query) {

@@ -95,13 +95,21 @@ body{
 	padding: 0 2rem;
 	background-color: #2c2c2c;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
-#tempo i, #tempo p{
+#tempo i{
+	position:absolute;
+	top: 0;
+	left: 0;
+	height: 4rem;
+	width: 4rem;
+}
+
+#tempo p{
 	color: #ffffff;
-	font-size: 7rem;
+	font-size: 12rem;
 	font-weight: bold;
 	font-style: normal;
 }
